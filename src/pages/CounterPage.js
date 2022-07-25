@@ -3,8 +3,8 @@ import Counter from '../Components/Counter/Counter';
 
 const CounterPage = () => {
     return (
-        <div className='container mt-5'>
-            <div className='row d-flex justify-content-center'>
+        <div className='container mt-5 col-md-6'>
+            <div className='row'>
                 <Counter />
             </div>
         </div>

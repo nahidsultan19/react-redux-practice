@@ -8,18 +8,18 @@ const Counter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className='card'>
+        <div className='card border-0 shadow-lg'>
             <div className="card-header bg-secondary">
-                <h2>Card Header</h2>
+                <h2 className='text-white text-center'>Counter APP</h2>
             </div>
-            <div className='card-body'>
-                <h4>{count}</h4>
+            <div className='card-body text-center'>
+                <h4 className='fs-1'>{count}</h4>
                 <div className='my-4'>
-                    <button onClick={() => dispatch(increament())} className='btn btn-success'>Increase</button>
-                    <button onClick={() => dispatch(decreament())} className='btn btn-primary mx-3'>Decrease</button>
+                    {count > 0 && <button onClick={() => dispatch(decreament())} className='btn btn-primary mx-3'>Decreament</button>}
+                    <button onClick={() => dispatch(increament())} className='btn btn-success'>Increament</button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
